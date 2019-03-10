@@ -1,0 +1,20 @@
+# ⑥表单页index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件上传页</title>
+</head>
+<body>
+ 
+{#enctype="multipart/form-data"文件编码方式，必须设置，否则文件无法上传#}
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="title">
+    <input type="text" name="content">
+    <input type="file" name="myfile">
+    <input type="submit" value="提交">
+</form>
+ 
+</body>
+</html>
